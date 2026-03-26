@@ -58,32 +58,6 @@ ShopMaster is a fully functional mobile e-commerce application built with React 
 - **Context API**: State management for auth and theme
 
 ## Folder Structure
-app/
-├── _layout.tsx              # Root layout with providers
-├── splash.tsx               # Splash screen with animations
-├── (auth)/                  # Authentication group
-│   ├── _layout.tsx          # Auth layout with redirect logic
-│   ├── login.tsx            # Login screen
-│   └── register.tsx         # Registration screen
-├── (tabs)/                  # Main app tabs
-│   ├── _layout.tsx          # Tabs configuration
-│   ├── index.tsx            # Home/Products screen
-│   ├── cart.tsx             # Shopping cart
-│   ├── checkout.tsx         # Checkout flow
-│   └── profile.tsx          # User profile
-└── product/
-└── [id].tsx             # Dynamic product details
-components/                  # Reusable components (if needed)
-context/
-├── AuthContext.tsx          # Authentication state management
-└── ThemeContext.tsx         # Theme/dark mode management
-services/
-├── api.ts                   # API calls to FakeStoreAPI
-└── storage.ts               # Secure storage wrapper
-types/
-└── index.ts                 # TypeScript type definitions
-
-
 **Structure Explanation**:
 - **Grouping by Feature**: Auth and Tabs are grouped using Expo Router's convention
 - **Secure Storage**: All sensitive data (tokens, cart) use SecureStore instead of AsyncStorage
